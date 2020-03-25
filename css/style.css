@@ -22,6 +22,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding-top: 45px;
+    margin-bottom: 30%;
 }
 
 .logo{
@@ -82,4 +83,87 @@ body{
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+
+.title{
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 7px;
+}
+
+.title-en{
+    display: inline-block;
+    font-size: 20px;
+    line-height: 23px;
+    color: #787878;
+    margin-bottom: 38px;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.movie-info{
+    display: flex;
+    align-items: center;
+}
+.tag{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+
+    background: #FFFFFF;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-right: 20px;
+}
+
+.country{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-right: 33px;
+}
+
+.play{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.play::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/play.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 15px;
+}
+
+.more{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.more::after{
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/play.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: 15px;
+    transform: rotate(90deg);
 }
