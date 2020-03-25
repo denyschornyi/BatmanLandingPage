@@ -1,7 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
 body{
     background-color: #0A090A;
     color: #fff;
@@ -170,6 +167,8 @@ body{
 }
 
 .content{
+    display: flex;
+    justify-content: space-between;
     background: #FFFFFF;
     border-radius: 3px;
     color: #000;
@@ -212,4 +211,29 @@ body{
     font-size: 16px;
     line-height: 150%;
     text-decoration-line: underline;
+}
+
+.full-info{
+    flex: 0.95;
+}
+.full-content{
+    display: flex;
+    justify-content: space-between;
+}
+.tabs{
+    margin-bottom: 20px;
+}
+.tabs-content{
+    margin-right: 70px;
+}
+.tabs-item{
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 21px;
+    margin-right: 40px ;
+}
+
+.tabs-item-active{
+    color: #FF8F27;
 }
