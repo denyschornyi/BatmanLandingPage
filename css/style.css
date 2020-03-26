@@ -6,6 +6,7 @@ body{
     color: #fff;
     font-family: 'Roboto', sans-serif;
     background-image: url(../img/main-bg.png);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: top center;
 
@@ -223,7 +224,10 @@ body{
     justify-content: space-between;
 }
 .tabs{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 25%;
 }
 .tabs-content{
     margin-right: 70px;
@@ -279,4 +283,22 @@ body{
     outline: none;
     cursor: pointer;
     padding: 10px;    
+  }
+
+  @media(max-width:1200px){
+    .container{
+        max-width: 950px;
+    }
+  }
+
+  @media(max-width:992px){
+      
+  }
+
+  @media(max-width:768px){
+    
+  }
+
+  @media(max-width:578px){
+
   }
