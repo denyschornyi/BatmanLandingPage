@@ -293,6 +293,31 @@ body{
     padding: 10px;    
   }
 
+  .actors{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      
+  }
+  .actors-item{
+    flex-basis: 30%;
+    margin-bottom: 20px;
+    margin-right: 3%;
+  }
+
+  .actors-item-name{
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 5px;
+    margin-top: 15px;
+  }
+
+  .actors-item-role{
+    font-size: 16px;
+    line-height: 140%;
+  }
+
   @media(max-width:1200px){
     body{
         background-size: auto;
