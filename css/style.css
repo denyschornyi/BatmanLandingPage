@@ -215,7 +215,7 @@ body{
     text-decoration-line: underline;
 }
 
-.content-full-info{
+.full-info{
     flex: 0.95;
 }
 .full-content{
@@ -378,7 +378,7 @@ hr{
       .tabs{
           margin-bottom: 0;
       }
-    .content-short-info{
+    .short-info{
         flex-basis: 100%;
     }
     .movie-info{
