@@ -51,16 +51,16 @@ body{
 }
 
 /* Placeholder color for search input */
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.header-search-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #AEAEAE;
     opacity: 1; /* Firefox */
   }
   
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  .header-search-input:-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: #AEAEAE;
   }
   
-  ::-ms-input-placeholder { /* Microsoft Edge */
+  .header-search-input::-ms-input-placeholder { /* Microsoft Edge */
     color: #AEAEAE;
   }
 
@@ -75,6 +75,10 @@ body{
 .header-user{
     display: flex;
     align-items: center;
+}
+
+.header-bookmark{
+    cursor: pointer;
 }
 
 .header-avatar{
@@ -378,10 +382,10 @@ hr{
       .tabs{
           margin-bottom: 0;
       }
-    .short-info{
+    .content-short-info{
         flex-basis: 100%;
     }
-    .movie-info{
+    .main-info-movie{
         display: flex;
         flex-wrap: wrap;
     }
