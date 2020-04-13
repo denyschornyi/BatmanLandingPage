@@ -15,18 +15,29 @@ $(document).ready(function() {
         console.log(showTab);
        
     });
-    let bookmarkCheck = false;
+
+
+    if(localStorage.getItem('bookmarkCheck') === 'true'){
+        bookmark.attr('src','img/bookmark-added.svg');
+    }
+
     bookmark.on('click', () =>{
-        if(bookmarkCheck == false){
-            bookmarkCheck = true;
+        if(localStorage.getItem('bookmarkCheck') === 'false'){
             bookmark.attr('src','img/bookmark-added.svg');
-        }else if(bookmarkCheck == true){
-            bookmarkCheck = false;
+            localStorage.setItem('bookmarkCheck', 'true' );
+
+        }else if(localStorage.getItem('bookmarkCheck') === 'true'){
             bookmark.attr('src','img/bookmark.svg');
+            localStorage.setItem('bookmarkCheck', 'false' );
+        }else{
+            bookmark.attr('src','img/bookmark-added.svg');
+            localStorage.setItem('bookmarkCheck', 'true' );
         }
     });
+
+    
     buttonWatch.on('click', () => {
-        bookmarkCheck = true;
+        localStorage.setItem('bookmarkCheck', 'true' );
         bookmark.attr('src','img/bookmark-added.svg');
     });
 
