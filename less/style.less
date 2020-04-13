@@ -64,6 +64,9 @@ body{
             cursor: pointer;   
         }
     } //HEADER-SEARCH
+    &-bookmark{
+        cursor: pointer;
+    }
     &-user{
         display: flex;
         align-items: center;     
@@ -99,50 +102,17 @@ body{
         &-movie{
             display: flex;
             align-items: center;
-            .tag{
-                display: inline-block;
-                font-size: 16px;
-                line-height: 19px;
-                color: #333333;
-                background: #FFFFFF;
-                border-radius: 3px;
-                padding: 5px 10px;
-                margin-right: 20px;
-            }
-            .country{
-                display: inline-block;
-                font-size: 16px;
-                line-height: 19px;
-                color: #FFFFFF;
-                margin-right: 33px;
-            }
-            .play{
-                display: flex;
-                align-items: center;
-                font-size: 16px;
-                line-height: 19px;
-                color: #fff;
-                text-decoration: none;
-            }
-            .play::before{
-                content: '';
-                width: 30px;
-                height: 30px;
-                background-image: url(../img/play.svg);
-                background-repeat: no-repeat;
-                background-size: 100%;
-                margin-right: 15px;
-            }
         }
-      .more{
-        display: flex;
-        align-items: center;
-        font-size: 16px;
-        line-height: 19px;
-        color: #fff;
-        text-decoration: none;
-      }  
-      .more::after{
+    }
+}
+.more{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    text-decoration: none;
+    &::after{
         content: '';
         width: 30px;
         height: 30px;
@@ -152,8 +122,42 @@ body{
         margin-left: 15px;
         transform: rotate(90deg);
     }
+  }  
+.tag{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    background: #FFFFFF;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-right: 20px;
+}
+.country{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-right: 33px;
+}
+.play{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    text-decoration: none;
+    &::before{
+        content: '';
+        width: 30px;
+        height: 30px;
+        background-image: url(../img/play.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-right: 15px;
     }
 }
+
 .content{
     display: flex;
     justify-content: space-between;
@@ -197,29 +201,8 @@ body{
         }
     }
     } // Short-info 
-    &-full-info{
+    .full-info{
         flex: 0.95;
-        .tabs{
-            display: flex;
-            flex-wrap: wrap;
-            flex-basis: 25%;
-            &-item{
-                color: #000;
-                text-decoration: none;
-                font-size: 18px;
-                line-height: 21px;
-                &:not(:last-child){
-                    margin-right: 5% ;
-                }
-                &-active{
-                    color: #FF8F27;
-                }
-            }//tabs-item
-            &-content{
-                display: none;
-                margin-right: 10%;
-            }
-        }//tabs
     }//full-info
     .full-content{
         display: flex;
@@ -265,6 +248,27 @@ body{
         }
     }
 }//content
+.tabs{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 25%;
+    &-item{
+        color: #000;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 21px;
+        &:not(:last-child){
+            margin-right: 5% ;
+        }
+        &-active{
+            color: #FF8F27;
+        }
+    }//tabs-item
+    &-content{
+        display: none;
+        margin-right: 10%;
+    }
+}//tabs
 .actors{
     display: flex;
     justify-content: space-between;
@@ -356,7 +360,7 @@ hr{
     .short-info{
         flex-basis: 100%;
     }
-    .movie-info{
+    .main-info-movie{
         display: flex;
         flex-wrap: wrap;
     }
@@ -370,7 +374,7 @@ hr{
     .header{
         flex-wrap: wrap;
     }
-    .poster{
+    .content-short-info .poster{
         display: inline-block;
         width: 100%;
         margin-top: -15%;
@@ -378,7 +382,7 @@ hr{
     .button{
         width: 100%;
     }
-    .search{
+    .header-search{
         flex-basis: 100%;
         order: 3;
         margin-top: 5%;

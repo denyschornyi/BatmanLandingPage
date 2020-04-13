@@ -1,0 +1,31 @@
+{
+  "name": "batman",
+  "version": "1.0.0",
+  "description": "Hight designed landing page about new movie Batman 2021",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denyschornyi/BatmanLandingPage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denyschornyi/BatmanLandingPage/issues"
+  },
+  "homepage": "https://github.com/denyschornyi/BatmanLandingPage#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.2.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-less": "^4.0.1",
+    "imagemin-pngquant": "^8.0.0"
+  },
+  "dependencies": {
+    "gulp-autoprefixer": "^7.0.1"
+  }
+}
