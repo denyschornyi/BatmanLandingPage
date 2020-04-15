@@ -33,6 +33,11 @@ gulp.task('imgmin', function(){
         .pipe(gulp.dest('dist/images'))
 });
 
+gulp.task('imgmin', function(){
+    return gulp.src('src/img/actors/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/images/actors'))
+});
 
 gulp.task('watch', function(){
     gulp.watch('src/less/*.less', gulp.parallel('styles'));
