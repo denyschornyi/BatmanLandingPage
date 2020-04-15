@@ -7,7 +7,7 @@ body {
   background-color: #0A090A;
   color: #fff;
   font-family: 'Roboto', sans-serif;
-  background-image: url(../img/main-bg.png);
+  background-image: url('/dist/images/main-bg.png');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top center;
